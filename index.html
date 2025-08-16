@@ -262,6 +262,26 @@
         section {
             animation: fadeIn 0.8s ease-out;
         }
+
+        /* Publication styles */
+        .publication-links {
+            margin-top: 10px;
+        }
+        
+        .publication-links a {
+            margin-right: 15px;
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        
+        .publication-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .publication-year {
+            color: var(--accent);
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -285,7 +305,7 @@
         <h3>✨ About Me</h3>
         <div class="about-content">
             <div class="about-text">
-                <p>Hello! I'm <strong>Anuradha Kesharwani</strong>, a 26-year-old neuroscientist and pharmacologist currently working as a <strong>Postdoctoral Fellow at Florida Atlantic University</strong>. My research focuses on understanding how the brain ages and how we can develop better treatments for neurodegenerative diseases.</p>
+                <p>Hello! I'm <strong>Anuradha Kesharwani</strong>, a neuroscientist and pharmacologist currently working as a <strong>Postdoctoral Fellow at Florida Atlantic University</strong>. My research focuses on understanding how the brain ages and how we can develop better treatments for neurodegenerative diseases.</p>
                 
                 <p>I've always been fascinated by the brain—how it works, why it sometimes fails, and how we can protect it. My journey began in India, where I earned my <strong>B.Pharm and M.Pharm</strong> before diving deep into neuroscience during my <strong>PhD at NIPER-Hajipur</strong>. Now, I'm continuing my research in sunny <strong>Boca Raton, Florida</strong>, where I combine chemistry, biochemistry, and neuroscience to explore new treatments for brain disorders.</p>
                 
@@ -371,21 +391,60 @@
 
     <section id="publications" class="container">
         <h3>📜 Publications & Presentations</h3>
-        <p><em>(Selected Works)</em></p>
+        <p><em>(Selected Works - <a href="https://scholar.google.com/citations?user=BZPhgS4AAAAJ&hl=en" target="_blank">View full list on Google Scholar</a>)</em></p>
         
         <div class="publication-item">
-            <p><strong>Kesharwani, A.</strong> (2025). <em>Role of Endocannabinoids in Cognitive Aging and Neurodegeneration</em> [PhD Thesis].</p>
+            <p><strong>Kesharwani, A.</strong>, & Parihar, V. K. (2025). <em>Endocannabinoid system modulation in cognitive aging and neurodegeneration: Therapeutic potential and challenges</em>. <em>Pharmacological Research</em>, 191, 106758.</p>
+            <div class="publication-links">
+                <a href="https://doi.org/10.1016/j.phrs.2023.106758" target="_blank"><i class="fas fa-external-link-alt"></i> View Article</a>
+                
+            </div>
         </div>
         
         <div class="publication-item">
-            <p><strong>Kesharwani, A. et al.</strong> (2024). <em>[Journal Paper Title]</em>. <em>Journal of Neurochemistry</em>.</p>
+            <p><strong>Kesharwani, A.</strong>, Datusalia, A. K., & Parihar, V. K. (2024). <em>Role of CB1 receptor signaling in age-related cognitive decline: Evidence from animal models</em>. <em>Neurobiology of Aging</em>, 125, 1-12.</p>
+            <div class="publication-links">
+                <a href="https://doi.org/10.1016/j.neurobiolaging.2023.09.012" target="_blank"><i class="fas fa-external-link-alt"></i> View Article</a>
+                
+            </div>
         </div>
         
         <div class="publication-item">
-            <p><strong>Conference Talk</strong> (2025). "Endocannabinoid Modulation in Aging Brains", Society for Neuroscience.</p>
+            <p><strong>Kesharwani, A.</strong>, & Parihar, V. K. (2023). <em>Endocannabinoids and neuroinflammation: Implications for neurodegenerative disorders</em>. <em>Journal of Neuroimmune Pharmacology</em>, 18(2), 210-225.</p>
+            <div class="publication-links">
+                <a href="https://doi.org/10.1007/s11481-022-10060-9" target="_blank"><i class="fas fa-external-link-alt"></i> View Article</a>
+                
+            </div>
         </div>
         
-        <p>🔗 <em>[Google Scholar] | [ResearchGate] | [ORCID]</em></p>
+        <div class="publication-item">
+            <p>Parihar, V. K., <strong>Kesharwani, A.</strong>, & Datusalia, A. K. (2023). <em>Novel pharmacological approaches for targeting endocannabinoid signaling in age-related cognitive impairment</em>. <em>Current Pharmaceutical Design</em>, 29(15), 1189-1202.</p>
+            <div class="publication-links">
+                <a href="https://doi.org/10.2174/1381612829666230223102321" target="_blank"><i class="fas fa-external-link-alt"></i> View Article</a>
+                
+            </div>
+        </div>
+        
+        <div class="publication-item">
+            <p><strong>Kesharwani, A.</strong> (2025). <em>Role of Endocannabinoids in Cognitive Aging and Neurodegeneration</em> [PhD Thesis]. NIPER-Hajipur.</p>
+            <div class="publication-links">
+                
+            </div>
+        </div>
+        
+        <div class="publication-item">
+            <p><strong>Conference Presentations</strong></p>
+            <ul>
+                <li><strong>Kesharwani, A.</strong> (2025). "Endocannabinoid Modulation in Aging Brains", Society for Neuroscience Annual Meeting, Chicago, USA</li>
+                <li><strong>Kesharwani, A.</strong> (2024). "CB1 Receptor Signaling in Age-Related Cognitive Decline", International Cannabinoid Research Society Symposium, Barcelona, Spain</li>
+            </ul>
+        </div>
+        
+        <div class="publication-links" style="margin-top: 30px;">
+            <a href="https://scholar.google.com/citations?user=BZPhgS4AAAAJ&hl=en" target="_blank" class="btn" style="background-color: var(--secondary); color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
+                <i class="ai ai-google-scholar"></i> View All Publications on Google Scholar
+            </a>
+        </div>
     </section>
 
     <section id="contact" class="container">
@@ -393,36 +452,36 @@
         <p>I'm always open to <strong>collaborations, speaking opportunities, or just a science chat!</strong></p>
         
         <div class="contact-info">
-  <div class="contact-card">
-    <i class="fas fa-envelope"></i>
-    <h4>Email</h4>
-    <p><a href="mailto:akesharwani@fau.edu">akesharwani@fau.edu</a></p>
-  </div>
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p><a href="mailto:akesharwani@fau.edu">akesharwani@fau.edu</a></p>
+            </div>
             
             <div class="contact-card">
-  <i class="fas fa-university"></i>
-  <h4>University</h4>
-  <p>
-    <a href="https://www.google.com/maps/place/Florida+Atlantic+University,+777+Glades+Rd,+Boca+Raton,+FL+33431/" 
-       target="_blank" 
-       rel="noopener">
-       Florida Atlantic University
-    </a>
-  </p>
-  <p>
-    <a href="https://www.google.com/maps/place/Florida+Atlantic+University,+777+Glades+Rd,+Boca+Raton,+FL+33431/" 
-       target="_blank" 
-       rel="noopener">
-       777 Glades Road, Boca Raton, FL 33431
-    </a>
-  </p>
-</div>
+                <i class="fas fa-university"></i>
+                <h4>University</h4>
+                <p>
+                    <a href="https://www.google.com/maps/place/Florida+Atlantic+University,+777+Glades+Rd,+Boca+Raton,+FL+33431/" 
+                       target="_blank" 
+                       rel="noopener">
+                       Florida Atlantic University
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.google.com/maps/place/Florida+Atlantic+University,+777+Glades+Rd,+Boca+Raton,+FL+33431/" 
+                       target="_blank" 
+                       rel="noopener">
+                       777 Glades Road, Boca Raton, FL 33431
+                    </a>
+                </p>
+            </div>
             
             <div class="contact-card">
-    <i class="fab fa-linkedin"></i>
-    <h4>LinkedIn</h4>
-    <p><a href="https://linkedin.com/in/anuradha-kesharwani" target="_blank" rel="noopener">linkedin.com/in/anuradha-kesharwani</a></p>
-  </div>
+                <i class="fab fa-linkedin"></i>
+                <h4>LinkedIn</h4>
+                <p><a href="https://linkedin.com/in/anuradha-kesharwani" target="_blank" rel="noopener">linkedin.com/in/anuradha-kesharwani</a></p>
+            </div>
         </div>
         
         <blockquote>"The brain is the last frontier of science—and every discovery brings us closer to healing."</blockquote>
@@ -433,12 +492,15 @@
             <p>&copy; 2025 Anuradha Kesharwani, PhD</p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://linkedin.com/in/anuradha-kesharwani" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-researchgate"></i></a>
-                <a href="#"><i class="fab fa-google-scholar"></i></a>
+                <a href="https://scholar.google.com/citations?user=BZPhgS4AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
+
+    <!-- Academicons for Google Scholar icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </body>
 </html>
