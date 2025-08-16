@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuradha Kesharwani, PhD | Neuroscientist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+            --bg: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 80px 0 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1575505586569-646b2ca898fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        header .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--light);
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 40px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 2;
+        }
+
+        .profile-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-img img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .research-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .research-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .research-card h4 {
+            color: var(--secondary);
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        .education-item {
+            margin-bottom: 30px;
+            padding-left: 20px;
+            border-left: 3px solid var(--secondary);
+        }
+
+        .education-item h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .education-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .publication-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .contact-card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .contact-card i {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--secondary);
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .profile-img {
+                order: -1;
+                margin-bottom: 30px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        section {
+            animation: fadeIn 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Anuradha Kesharwani, PhD</h1>
+            <h2>Neuroscientist | Pharmacologist | Researcher</h2>
+            <p class="tagline">Exploring the endocannabinoid system to unlock therapies for brain aging & neurodegeneration</p>
+            
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#research">Research</a>
+                <a href="#education">Education</a>
+                <a href="#publications">Publications</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h3>✨ About Me</h3>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm <strong>Anuradha Kesharwani</strong>, a 26-year-old neuroscientist and pharmacologist currently working as a <strong>Postdoctoral Fellow at Florida Atlantic University</strong>. My research focuses on understanding how the brain ages and how we can develop better treatments for neurodegenerative diseases.</p>
+                
+                <p>I've always been fascinated by the brain—how it works, why it sometimes fails, and how we can protect it. My journey began in India, where I earned my <strong>B.Pharm and M.Pharm</strong> before diving deep into neuroscience during my <strong>PhD at NIPER-Hajipur</strong>. Now, I'm continuing my research in sunny <strong>Boca Raton, Florida</strong>, where I combine chemistry, biochemistry, and neuroscience to explore new treatments for brain disorders.</p>
+                
+                <p><strong>Beyond the lab</strong>, I love:</p>
+                <ul>
+                    <li>📖 Reading science fiction & philosophy</li>
+                    <li>✈️ Traveling and exploring new cultures</li>
+                    <li>☕ Coffee-fueled brainstorming sessions</li>
+                </ul>
+                
+                <blockquote>"Science is not just a career—it's a way of understanding life."</blockquote>
+            </div>
+            <div class="profile-img">
+                <!-- Placeholder for profile image -->
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Anuradha Kesharwani">
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="container">
+        <h3>🔬 Research & Projects</h3>
+        
+        <div class="research-grid">
+            <div class="research-card">
+                <h4>Current Work @ FAU</h4>
+                <p><strong>Role:</strong> Postdoctoral Fellow | <strong>Advisor:</strong> Dr. Srinivasa Subramaniam</p>
+                <ul>
+                    <li>Studying <strong>endocannabinoid signaling</strong> in aging brains</li>
+                    <li>Developing novel pharmacological strategies for <strong>Alzheimer's & Parkinson's disease</strong></li>
+                    <li>Using <strong>molecular and behavioral models</strong> to test new compounds</li>
+                </ul>
+            </div>
+            
+            <div class="research-card">
+                <h4>PhD Research @ NIPER-Hajipur</h4>
+                <p><strong>Thesis:</strong> "Role of Endocannabinoids in Cognitive Aging and Neurodegeneration"</p>
+                <ul>
+                    <li>Investigated how natural brain compounds (endocannabinoids) influence memory and cognition</li>
+                    <li>Explored drug targets for neuroprotection</li>
+                    <li>Published in peer-reviewed journals</li>
+                </ul>
+            </div>
+            
+            <div class="research-card">
+                <h4>Research Interests</h4>
+                <ul>
+                    <li>🧠 <strong>Neurodegeneration</strong> (Alzheimer's, Parkinson's)</li>
+                    <li>💊 <strong>Neuropharmacology & Drug Development</strong></li>
+                    <li>🔍 <strong>Molecular Mechanisms of Brain Aging</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="container">
+        <h3>🎓 Education</h3>
+        
+        <div class="education-item">
+            <h4>Postdoctoral Fellowship (2025–2026)</h4>
+            <p><strong>Florida Atlantic University, USA</strong></p>
+            <p>Department of Chemistry & Biochemistry</p>
+            <p>Stiles-Nicholson Brain Institute</p>
+        </div>
+        
+        <div class="education-item">
+            <h4>PhD in Pharmacology & Toxicology (2021–2025)</h4>
+            <p><strong>National Institute of Pharmaceutical Education & Research (NIPER-Hajipur), India</strong></p>
+            <p>Thesis on endocannabinoids and brain aging</p>
+            <p>Advisor: Dr. Vipan K. Parihar</p>
+        </div>
+        
+        <div class="education-item">
+            <h4>M.Pharm</h4>
+            <p><strong>Guru Ghasidas University, Bilaspur, India</strong></p>
+        </div>
+        
+        <div class="education-item">
+            <h4>B.Pharm</h4>
+            <p><strong>Sambhunath Institute of Pharmacy, India</strong></p>
+        </div>
+    </section>
+
+    <section id="publications" class="container">
+        <h3>📜 Publications & Presentations</h3>
+        <p><em>(Selected Works)</em></p>
+        
+        <div class="publication-item">
+            <p><strong>Kesharwani, A.</strong> (2025). <em>Role of Endocannabinoids in Cognitive Aging and Neurodegeneration</em> [PhD Thesis].</p>
+        </div>
+        
+        <div class="publication-item">
+            <p><strong>Kesharwani, A. et al.</strong> (2024). <em>[Journal Paper Title]</em>. <em>Journal of Neurochemistry</em>.</p>
+        </div>
+        
+        <div class="publication-item">
+            <p><strong>Conference Talk</strong> (2025). "Endocannabinoid Modulation in Aging Brains", Society for Neuroscience.</p>
+        </div>
+        
+        <p>🔗 <em>[Google Scholar] | [ResearchGate] | [ORCID]</em></p>
+    </section>
+
+    <section id="contact" class="container">
+        <h3>💌 Let's Connect!</h3>
+        <p>I'm always open to <strong>collaborations, speaking opportunities, or just a science chat!</strong></p>
+        
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>your.email@fau.edu</p>
+            </div>
+            
+            <div class="contact-card">
+                <i class="fas fa-university"></i>
+                <h4>University</h4>
+                <p>Florida Atlantic University</p>
+                <p>777 Glades Road, Boca Raton, FL 33431</p>
+            </div>
+            
+            <div class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <h4>LinkedIn</h4>
+                <p>linkedin.com/in/anuradha-kesharwani</p>
+            </div>
+        </div>
+        
+        <blockquote>"The brain is the last frontier of science—and every discovery brings us closer to healing."</blockquote>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Anuradha Kesharwani, PhD</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-researchgate"></i></a>
+                <a href="#"><i class="fab fa-google-scholar"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
